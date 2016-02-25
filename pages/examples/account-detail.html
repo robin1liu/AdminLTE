@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Smart CRM| Home</title>
+  <title>Smart CRM| Contact Detail</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.5 -->
@@ -39,7 +39,7 @@
             <!-- <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li> -->
             <li><a href="dashboard.html">Dashboard</a></li>
             <li><a href="#">Sales</a></li>
-            <li><a href="accounts.html">Accounts</a></li>
+            <li><a href="accounts">Accounts</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="calendar.html">Calendar</a></li>
             <li><a href="task.html">Task</a></li>
@@ -313,7 +313,7 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        <small>My Home</small>
+        <small>Contact Name's Board</small>
       </h1>
      <!--  <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -329,53 +329,86 @@
         <div class="col-md-3">
 
           <!-- Profile Image -->
-          <div class="box box-primary">
-            <div class="box-body box-profile">
-              <img class="profile-user-img img-responsive img-circle" src="../../dist/img/user4-128x128.jpg" alt="User profile picture">
-
-              <h3 class="profile-username text-center">Nina Mcintire</h3>
-
-              <p class="text-muted text-center">Sumridge Trader</p>
-
-              <ul class="list-group list-group-unbordered">
-                <li class="list-group-item">
-                  <b>Followers</b> <a class="pull-right">1,322</a>
-                </li>
-                <li class="list-group-item">
-                  <b>Following</b> <a class="pull-right">543</a>
-                </li>
-                <li class="list-group-item">
-                  <b>Tasks</b> <a class="pull-right">9</a>
-                </li>
-              </ul>
-
-              <a href="#" class="btn btn-primary btn-block"><b>Edit</b></a>
+          <div class="box box-widget widget-user">
+            <!-- Add the bg color to the header using any of the bg-* classes -->
+            <div class="widget-user-header bg-aqua-active">
+              <h3 class="widget-user-username">JPMorgan</h3>
+              <h5 class="widget-user-desc">Partner</h5>
             </div>
-            <!-- /.box-body -->
+            <div class="widget-user-image">
+              <img class="img-circle" src="../../dist/img/user1-128x128.jpg" alt="User Avatar">
+            </div>
+            <div class="box-footer">
+              <div class="row">
+                <div class="col-sm-4 border-right">
+                  <div class="description-block">
+                    <h5 class="description-header">3,200</h5>
+                    <span class="description-text">SALES</span>
+                  </div>
+                  <!-- /.description-block -->
+                </div>
+                <!-- /.col -->
+                <div class="col-sm-4 border-right">
+                  <div class="description-block">
+                    <h5 class="description-header">13,000</h5>
+                    <span class="description-text">FOLLOWERS</span>
+                  </div>
+                  <!-- /.description-block -->
+                </div>
+                <!-- /.col -->
+                <div class="col-sm-4">
+                  <div class="description-block">
+                    <h5 class="description-header">35</h5>
+                    <span class="description-text">DOCUMENT</span>
+                  </div>
+                  <!-- /.description-block -->
+                </div>
+                <!-- /.col -->
+              </div>
+              <!-- /.row -->
+              <a href="#" class="btn btn-primary btn-block"><b>Follow</b></a>
+            </div>
           </div>
           <!-- /.box -->
-          <div class="box box-warning">
+          <!-- About Me Box -->
+          <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">Latest Files</h3>
-
-              <div class="box-tools">
-                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                </button>
-              </div>
+              <h3 class="box-title">About Contact</h3>
             </div>
-            <div class="box-body no-padding">
-              <ul class="nav nav-pills nav-stacked">
-                <li><a href="#"><i class="fa fa-file-excel-o text-yellow"></i> demo.xls</a></li>
-                <li><a href="#"><i class="fa fa-file-pdf-o text-yellow"></i> demo.pdf</a></li>
-                <li><a href="#"><i class="fa fa-file-powerpoint-o text-yellow"></i> demo.ppt</a></li>
-              </ul>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <strong><i class="fa fa-book margin-r-5"></i> Connect</strong>
+
+              <p class="text-muted">
+               xx@xx.com
+              </p>
+
+              <hr>
+
+              <strong><i class="fa fa-map-marker margin-r-5"></i> Location</strong>
+
+              <p class="text-muted">Malibu, California</p>
+
+              <hr>
+
+              <strong><i class="fa fa-pencil margin-r-5"></i> Tags</strong>
+
+              <p>
+                <span class="label label-danger">Best</span>
+                <span class="label label-success">Trader</span>
+                <span class="label label-info">Sales</span>
+                <span class="label label-warning">Football</span>
+                <span class="label label-primary">Golf</span>
+              </p>
+
+              <hr>
+
+              <strong><i class="fa fa-file-text-o margin-r-5"></i> Notes</strong>
+
+              <p>a nice partner</p>
             </div>
             <!-- /.box-body -->
-            <div class="box-footer text-center">
-              <a href="disk.html" class="uppercase">View My Disk</a>
-            </div>
           </div>
-           <!-- /.box -->
         </div>
         <!-- /.col -->
         <div class="col-md-6">
@@ -391,6 +424,7 @@
             <ul class="nav nav-tabs">
               <li class="active"><a href="#activity" data-toggle="tab">Activity</a></li>
               <li><a href="#timeline" data-toggle="tab">Timeline</a></li>
+              <li><a href="#settings" data-toggle="tab">Portfolio</a></li>
             </ul>
             <div class="tab-content">
               <div class="active tab-pane" id="activity">
@@ -639,6 +673,10 @@
               </div>
               <!-- /.tab-pane -->
 
+              <div class="tab-pane" id="settings">
+                
+              </div>
+              <!-- /.tab-pane -->
             </div>
             <!-- /.tab-content -->
           </div>
@@ -646,158 +684,144 @@
         </div>
         <!-- /.col -->
         <div class="col-md-3">
-          <!-- Members Box -->
-          <div class="box box-danger">
-                <div class="box-header with-border">
-                  <h3 class="box-title">Latest Members</h3>
-
-                  <div class="box-tools pull-right">
-                    <span class="label label-danger">8 New Members</span>
-                    <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                    </button>
-                    <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i>
-                    </button>
-                  </div>
-                </div>
-                <!-- /.box-header -->
-                <div class="box-body no-padding">
-                  <ul class="users-list clearfix">
-                    <li>
-                      <img src="../../dist/img/user1-128x128.jpg" alt="User Image">
-                      <a class="users-list-name" href="#">Alexander Pierce</a>
-                      <span class="users-list-date">Today</span>
-                    </li>
-                    <li>
-                      <img src="../../dist/img/user8-128x128.jpg" alt="User Image">
-                      <a class="users-list-name" href="#">Norman</a>
-                      <span class="users-list-date">Yesterday</span>
-                    </li>
-                    <li>
-                      <img src="../../dist/img/user7-128x128.jpg" alt="User Image">
-                      <a class="users-list-name" href="#">Jane</a>
-                      <span class="users-list-date">12 Jan</span>
-                    </li>
-                    <li>
-                      <img src="../../dist/img/user6-128x128.jpg" alt="User Image">
-                      <a class="users-list-name" href="#">John</a>
-                      <span class="users-list-date">12 Jan</span>
-                    </li>
-                    <li>
-                      <img src="../../dist/img/user2-160x160.jpg" alt="User Image">
-                      <a class="users-list-name" href="#">Alexander</a>
-                      <span class="users-list-date">13 Jan</span>
-                    </li>
-                    <li>
-                      <img src="../../dist/img/user5-128x128.jpg" alt="User Image">
-                      <a class="users-list-name" href="#">Sarah</a>
-                      <span class="users-list-date">14 Jan</span>
-                    </li>
-                    <li>
-                      <img src="../../dist/img/user4-128x128.jpg" alt="User Image">
-                      <a class="users-list-name" href="#">Nora</a>
-                      <span class="users-list-date">15 Jan</span>
-                    </li>
-                    <li>
-                      <img src="../../dist/img/user3-128x128.jpg" alt="User Image">
-                      <a class="users-list-name" href="#">Nadia</a>
-                      <span class="users-list-date">15 Jan</span>
-                    </li>
-                  </ul>
-                  <!-- /.users-list -->
-                </div>
-                <!-- /.box-body -->
-                <div class="box-footer text-center">
-                  <a href="javascript::" class="uppercase">View All Users</a>
-                </div>
-                <!-- /.box-footer -->
-              </div>
-          <!-- chat Box -->
-         <div class="box box-success direct-chat direct-chat-success">
+        <!-- STATISTIC -->
+          <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">Direct Chat</h3>
+              <h3 class="box-title">Summary</h3>
 
               <div class="box-tools pull-right">
-                <span data-toggle="tooltip" title="3 New Messages" class="badge bg-green">3</span>
                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
                 </button>
-                <button type="button" class="btn btn-box-tool" data-toggle="tooltip" title="" data-widget="chat-pane-toggle" data-original-title="Contacts">
-                  <i class="fa fa-comments"></i></button>
                 <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
               </div>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
-              <!-- Conversations are loaded here -->
-              <div class="direct-chat-messages">
-                <!-- Message. Default to the left -->
-                <div class="direct-chat-msg">
-                  <div class="direct-chat-info clearfix">
-                    <span class="direct-chat-name pull-left">Alexander Pierce</span>
-                    <span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
+              <div class="row">
+                <div class="col-sm-6 col-xs-12">
+                  <div class="description-block border-right">
+                    <span class="description-percentage text-green"><i class="fa fa-caret-up"></i> 17%</span>
+                    <h5 class="description-header">$35,210.43</h5>
+                    <span class="description-text">TOTAL TRADING</span>
                   </div>
-                  <!-- /.direct-chat-info -->
-                  <img class="direct-chat-img" src="../../dist/img/user1-128x128.jpg" alt="Message User Image"><!-- /.direct-chat-img -->
-                  <div class="direct-chat-text">
-                    did you finish the big trade? That's unbelievable!
-                  </div>
-                  <!-- /.direct-chat-text -->
+                  <!-- /.description-block -->
                 </div>
-                <!-- /.direct-chat-msg -->
-
-                <!-- Message to the right -->
-                <div class="direct-chat-msg right">
-                  <div class="direct-chat-info clearfix">
-                    <span class="direct-chat-name pull-right">Sarah Bullock</span>
-                    <span class="direct-chat-timestamp pull-left">23 Jan 2:05 pm</span>
+                <!-- /.col -->
+                <div class="col-sm-6 col-xs-12">
+                  <div class="description-block">
+                    <span class="description-percentage text-yellow"><i class="fa fa-caret-left"></i> 0%</span>
+                    <h5 class="description-header">$10,390.90</h5>
+                    <span class="description-text">TOTAL PROFIT</span>
                   </div>
-                  <!-- /.direct-chat-info -->
-                  <img class="direct-chat-img" src="../../dist/img/user3-128x128.jpg" alt="Message User Image"><!-- /.direct-chat-img -->
-                  <div class="direct-chat-text">
-                    You better believe it!
-                  </div>
-                  <!-- /.direct-chat-text -->
+                  <!-- /.description-block -->
                 </div>
-                <!-- /.direct-chat-msg -->
+                <!-- /.col -->
+             
               </div>
-              <!--/.direct-chat-messages-->
-
-              <!-- Contacts are loaded here -->
-              <div class="direct-chat-contacts">
-                <ul class="contacts-list">
-                  <li>
-                    <a href="#">
-                      <img class="contacts-list-img" src="../../dist/img/user1-128x128.jpg">
-
-                      <div class="contacts-list-info">
-                            <span class="contacts-list-name">
-                              Count Dracula
-                              <small class="contacts-list-date pull-right">2/28/2015</small>
-                            </span>
-                        <span class="contacts-list-msg">How have you been? I was...</span>
-                      </div>
-                      <!-- /.contacts-list-info -->
-                    </a>
-                  </li>
-                  <!-- End Contact Item -->
-                </ul>
-                <!-- /.contatcts-list -->
-              </div>
-              <!-- /.direct-chat-pane -->
             </div>
             <!-- /.box-body -->
-            <div class="box-footer">
-              <form action="#" method="post">
-                <div class="input-group">
-                  <input type="text" name="message" placeholder="Type Message ..." class="form-control">
-                      <span class="input-group-btn">
-                        <button type="submit" class="btn btn-success btn-flat">Send</button>
-                      </span>
-                </div>
-              </form>
+            <div class="box-footer text-center">
+              <a href="javascript::;" class="uppercase">View Detail Summary</a>
             </div>
-            <!-- /.box-footer-->
+            <!-- /.box-footer -->
           </div>
-          <!-- / chat box -->
+          <!-- /.box -->
+         <!-- PRODUCT LIST -->
+          <div class="box box-primary">
+            <div class="box-header with-border">
+              <h3 class="box-title">Recently Added Sales</h3>
+
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+              </div>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <ul class="products-list product-list-in-box">
+                <li class="item">
+                  <div class="product-img">
+                    <img src="../../dist/img/user1-128x128.jpg" class="img-circle" alt="User Image">
+                  </div>
+                  <div class="product-info">
+                    <a href="javascript::;" class="product-title">Customer 1
+                      <span class="label label-warning pull-right">$1800</span></a>
+                        <span class="product-description">
+                          buy <a href="#">#cusip</a> qty:100,price:98.8
+                        </span>
+                  </div>
+                </li>
+                <!-- /.item -->
+                <li class="item">
+                  <div class="product-img">
+                    <img src="../../dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
+                  </div>
+                  <div class="product-info">
+                    <a href="javascript::;" class="product-title">Customer 2
+                      <span class="label label-info pull-right">$700</span></a>
+                        <span class="product-description">
+                          buy <a href="#">#cusip</a> qty:100,price:98.8
+                        </span>
+                  </div>
+                </li>
+                <!-- /.item -->
+                <li class="item">
+                  <div class="product-img">
+                    <img src="../../dist/img/user5-128x128.jpg" class="img-circle" alt="User Image">
+                  </div>
+                  <div class="product-info">
+                    <a href="javascript::;" class="product-title">Customer 3 <span class="label label-danger pull-right">$350</span></a>
+                        <span class="product-description">
+                          buy <a href="#">#cusip</a> qty:100,price:98.8
+                        </span>
+                  </div>
+                </li>
+                <!-- /.item -->
+                <li class="item">
+                  <div class="product-img">
+                    <img src="../../dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
+                  </div>
+                  <div class="product-info">
+                    <a href="javascript::;" class="product-title">Customer 4
+                      <span class="label label-success pull-right">$399</span></a>
+                        <span class="product-description">
+                          buy <a href="#">#cusip</a> qty:100,price:98.8
+                        </span>
+                  </div>
+                </li>
+                <!-- /.item -->
+              </ul>
+            </div>
+            <!-- /.box-body -->
+            <div class="box-footer text-center">
+              <a href="javascript::;" class="uppercase">View All Sales</a>
+            </div>
+            <!-- /.box-footer -->
+          </div>
+          <!-- /.box -->
+          <div class="box box-warning">
+            <div class="box-header with-border">
+              <h3 class="box-title">Latest Files</h3>
+
+              <div class="box-tools">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                </button>
+              </div>
+            </div>
+            <div class="box-body no-padding">
+              <ul class="nav nav-pills nav-stacked">
+                <li><a href="#"><i class="fa fa-file-excel-o text-yellow"></i> demo.xls</a></li>
+                <li><a href="#"><i class="fa fa-file-pdf-o text-yellow"></i> demo.pdf</a></li>
+                <li><a href="#"><i class="fa fa-file-powerpoint-o text-yellow"></i> demo.ppt</a></li>
+              </ul>
+            </div>
+            <!-- /.box-body -->
+            <div class="box-footer text-center">
+              <a href="disk.html" class="uppercase">View My Disk</a>
+            </div>
+          </div>
+           <!-- /.box -->
         </div>
         <!-- /.col -->
       </div>
