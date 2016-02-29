@@ -19,6 +19,8 @@
   <link rel="stylesheet" href="../../dist/css/skins/skin-purple.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="../../dist/css/demo.css">
+    <!-- iCheck -->
+  <link rel="stylesheet" href="../../plugins/iCheck/flat/blue.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -43,7 +45,7 @@
             <li><a href="dashboard.html">Dashboard</a></li>
             <li><a href="sales.html">Sales</a></li>
             <li><a href="accounts.html">Accounts</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
             <li><a href="calendar.html">Calendar</a></li>
             <li><a href="task.html">Task</a></li>
             <li class="dropdown">
@@ -316,13 +318,9 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        <small>Contact</small>
+        <small>My Sales</small>
       </h1>
-     <!--  <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li><a href="#">Examples</a></li>
-        <li class="active">User profile</li>
-      </ol> -->
+      
     </section>
 
     <!-- Main content -->
@@ -332,11 +330,17 @@
          <div class="col-md-9">
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">Contact</h3>
+              <small class="box-title" style="font-size: 80%">
+                <ol class="breadcrumb" style="background: #ffffff">
+                  <li><a href="#"><i class="fa fa-dashboard"></i> filter1</a></li>
+                  <li><a href="#">filter2</a></li>
+                  <li class="active">filter3</li>
+                </ol>
+              </small>
 
               <div class="box-tools pull-right">
                 <div class="btn-group">
-                  <input type="text" class="form-control input-sm" placeholder="Search Contact">
+                  <input type="text" class="form-control input-sm" placeholder="Search Sales">
                   <span class="glyphicon glyphicon-search form-control-feedback"></span>
                 </div>
                 <button type="button" class="btn btn-success"><i class="fa fa-plus"></i></button>
@@ -347,121 +351,75 @@
             <div class="box-body no-padding">
               <div class="mailbox-controls">
                 <!-- Check all button -->
-            
-                
+                <button type="button" class="btn btn-default btn-sm checkbox-toggle"><i class="fa fa-square-o"></i>
+                </button>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default btn-sm"><i class="fa fa-download"></i></button>
+                  <button type="button" class="btn btn-default btn-sm"><i class="fa fa-share"></i></button>
+                </div>
                 <!-- /.btn-group -->
-                
+                <button type="button" class="btn btn-default btn-sm"><i class="fa fa-refresh"></i></button>
+                <div class="pull-right">
+                  1-50/200
                   <div class="btn-group">
                     <button type="button" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></button>
                     <button type="button" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></button>
                   </div>
-                  1-50/200
                   <!-- /.btn-group -->
-                <div class="pull-right">
-                <p>200 contact sorted by last name<i class="fa fa-sort-amount-desc"></i></p>
-                  
                 </div>
                 <!-- /.pull-right -->
               </div>
               <div class="box-body">
 
-                <div class="box">
-                  <div class="box-header with-border">
-                    <h3 class="box-title">A</h3>
-                    <div class="box-tools pull-right">
-                      <!-- Buttons, labels, and many other things can be placed here! -->
-                      <!-- Here is a label for example -->
-                      <span class="label label-primary">15</span>
-                    </div><!-- /.box-tools -->
-                  </div><!-- /.box-header -->
-                  <div class="box-body">
-                    <ul class="todo-list">
-                      <li>
-                        <a href="#"><i class="fa fa-star text-yellow"></i></a>
-                        <!-- todo text -->
-                        <img class="img-small img-circle img-bordered-sm" src="../../dist/img/user7-128x128.jpg" alt="User Image">
-                        <a href="contact-detail.html"><span class="text">Alen Adown</span></a>
-                        <small>--desc...</small>
-                        <!-- General tools such as edit or delete-->
-                        <div class="tools">
-                          <i class="fa fa-paperclip"></i>
-                          <i class="fa fa-commenting-o"></i>
-                          <i class="fa fa-tty"></i>
-                          <i class="fa fa-envelope-o"></i>
-                          <i class="fa fa-edit"></i> 
-                          <i class="fa fa-trash-o"></i>
-                        </div>
-                      </li>
-
-                      <li>
-                        <a href="#"><i class="fa fa-star-o text-yellow"></i></a>
-                        <!-- todo text -->
-                        <img class="img-small img-circle img-bordered-sm" src="../../dist/img/user3-128x128.jpg" alt="User Image">
-                        <span class="text">Alen Adown</span>
-                        <small>--desc...</small>
-                        <!-- General tools such as edit or delete-->
-                        <div class="tools">
-                          <i class="fa fa-paperclip"></i>
-                          <i class="fa fa-commenting-o"></i>
-                          <i class="fa fa-tty"></i>
-                          <i class="fa fa-envelope-o"></i>
-                          <i class="fa fa-edit"></i> 
-                          <i class="fa fa-trash-o"></i>
-                        </div>
-                      </li>
-
-                    </ul><!-- /.ui -->
-                  </div><!-- /.box-body -->
-                </div><!-- /.box -->
-
-                <div class="box">
-                  <div class="box-header with-border">
-                    <h3 class="box-title">B</h3>
-                    <div class="box-tools pull-right">
-                      <!-- Buttons, labels, and many other things can be placed here! -->
-                      <!-- Here is a label for example -->
-                      <span class="label label-primary">5</span>
-                    </div><!-- /.box-tools -->
-                  </div><!-- /.box-header -->
-                  <div class="box-body">
-                    <ul class="todo-list">
-                      <li>
-                        <a href="#"><i class="fa fa-star text-yellow"></i></a>
-                        <!-- todo text -->
-                        <img class="img-small img-circle img-bordered-sm" src="../../dist/img/user5-128x128.jpg" alt="User Image">
-                        <span class="text">Blen Bdown</span>
-                        <small>--desc...</small>
-                        <!-- General tools such as edit or delete-->
-                        <div class="tools">
-                          <i class="fa fa-paperclip"></i>
-                          <i class="fa fa-commenting-o"></i>
-                          <i class="fa fa-tty"></i>
-                          <i class="fa fa-envelope-o"></i>
-                          <i class="fa fa-edit"></i> 
-                          <i class="fa fa-trash-o"></i>
-                        </div>
-                      </li>
-
-                      <li>
-                        <a href="#"><i class="fa fa-star-o text-yellow"></i></a>
-                        <!-- todo text -->
-                        <img class="img-small img-circle img-bordered-sm" src="../../dist/img/user6-128x128.jpg" alt="User Image">
-                        <span class="text">Blen Bdown</span>
-                        <small>--desc...</small>
-                        <!-- General tools such as edit or delete-->
-                        <div class="tools">
-                          <i class="fa fa-paperclip"></i>
-                          <i class="fa fa-commenting-o"></i>
-                          <i class="fa fa-tty"></i>
-                          <i class="fa fa-envelope-o"></i>
-                          <i class="fa fa-edit"></i> 
-                          <i class="fa fa-trash-o"></i>
-                        </div>
-                      </li>
-
-                    </ul><!-- /.ui -->
-                  </div><!-- /.box-body -->
-                </div><!-- /.box -->
+                <table class="table">
+                <tbody><tr>
+                  <th style="width: 10px">#</th>
+                  <th style="width: 10px"></th>
+                  <th>Info</th>
+                  <th>Price</th>
+                  <th>Qty</th>
+                  <th>Creator</th>
+                  <th>Update Time</th>
+                  <th style="width: 40px">Status</th>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" value="1"/></td>
+                  <td class="mailbox-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
+                  <td><span class="fa fa-fw fa-dollar text-green"></span><a href="sales-detail.html">#cusip sell</a></td>
+                  <td>
+                  99.8
+                  </td>
+                  <td>
+                  100M
+                  </td>
+                  <td>
+                  <a href="#">Account Name</a>
+                  </td>
+                  <td>
+                   2016.10.01 9:00am
+                  </td>
+                  <td><span class="badge bg-green">finished</span></td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" value="1"/></td>
+                  <td class="mailbox-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
+                  <td><span class="fa fa-fw fa-dollar text-green"></span><a href="sales-detail.html">#cusip sell</a></td>
+                  <td>
+                  99.8
+                  </td>
+                  <td>
+                  100M
+                  </td>
+                  <td>
+                  <a href="#">Account Name</a>
+                  </td>
+                  <td>
+                   2016.10.01 9:00am
+                  </td>
+                  <td><span class="badge bg-red">cancel</span></td>
+                </tr>
+                
+              </tbody></table>
 
               </div>
               <!-- /.box-body -->
@@ -491,10 +449,12 @@
             <div class="box-body no-padding" style="display: none;">
               <ul class="nav nav-pills nav-stacked">
                 <li><a href="#"><input type="checkbox" value="" name=""> recent view<span class="label label-warning pull-right">100+</span></a></li>
-                <li><a href="#"><input type="checkbox" value="" name=""> following<span class="label label-warning pull-right">15</span></a></li>
-                <li><a href="#"><input type="checkbox" value="" name=""> connected <span class="label label-warning pull-right">65</span></a>
+                <li><a href="#"><input type="checkbox" value="" name=""> shared <span class="label label-warning pull-right">65</span></a>
                 </li>
                 <li><a href="#"><input type="checkbox" value="" name=""> star<span class="label label-warning pull-right">35</span></a></li>
+                <li>
+                  <a href="#"><i class="fa fa-circle-o"></i> Status<i class="fa fa-angle-left pull-right"></i></a>
+                </li>
               </ul>
             </div>
             <!-- /.box-body -->
@@ -514,42 +474,15 @@
             </div>
             <div class="box-body no-padding" style="display: none;">
               <ul class="nav nav-pills nav-stacked">
-                <li><a href="#"><i class="fa fa-sort text-light-blue"></i> Last Name</a></li>
+                <li><a href="#"><i class="fa fa-sort text-light-blue"></i> Name</a></li>
                 <li><a href="#"><i class="fa fa-sort text-light-blue"></i> Create Date</a></li>
-                <li><a href="#"><i class="fa fa-sort text-light-blue"></i> Connect Date</a></li>
+                <li><a href="#"><i class="fa fa-sort text-light-blue"></i> Qty</a></li>
               </ul>
             </div>
             <!-- /.box-body -->
           </div>
           <!-- /.box -->
-          <div class="box box-solid">
-            <div class="box-header with-border">
-              <h3 class="box-title">Pin List</h3>
-
-              <div class="box-tools">
-                 <button type="button" class="btn btn-box-tool" data-toggle="tooltip" title="" data-widget="chat-pane-toggle" data-original-title="Contacts">
-                  <i class="fa fa-comments"></i>
-                </button>
-                <button type="button" class="btn btn-box-tool" data-toggle="tooltip" title="" data-widget="chat-pane-toggle" data-original-title="Email">
-                  <i class="fa fa-envelope"></i>
-                </button>
-                <button type="button" class="btn btn-box-tool" data-toggle="tooltip" title="" data-widget="chat-pane-toggle" data-original-title="Clear">
-                  <i class="fa fa-trash"></i>
-                </button>
-                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                </button>
-              </div>
-            </div>
-            <div class="box-body no-padding">
-              <ul class="nav nav-pills nav-stacked">
-                <li><a href="#"><i class="fa fa-paperclip text-yellow"></i> Alen Adon</a></li>
-                <li><a href="#"><i class="fa fa-paperclip text-yellow"></i> Jack Lee</a></li>
-                <li><a href="#"><i class="fa fa-paperclip text-yellow"></i> Bruce Pan</a></li>
-              </ul>
-            </div>
-            <!-- /.box-body -->
-          </div>
-          <!-- /.box -->
+        
         </div>
 
       </div>
@@ -571,7 +504,24 @@
   </footer>
 </div>
 <!-- ./wrapper -->
-
+<!-- Modal -->
+<div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg"  role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">File Name</h4>
+      </div>
+      <div class="modal-body">
+        File Content
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 <!-- jQuery 2.2.0 -->
 <script src="../../plugins/jQuery/jQuery-2.2.0.min.js"></script>
 <!-- Bootstrap 3.3.5 -->
@@ -584,5 +534,52 @@
 <script src="../../dist/js/app.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../../dist/js/demo.js"></script>
+<script src="../../plugins/iCheck/icheck.min.js"></script>
+<!-- Page Script -->
+<script>
+  $(function () {
+    //Enable iCheck plugin for checkboxes
+    //iCheck for checkbox and radio inputs
+    $('.mailbox-messages input[type="checkbox"]').iCheck({
+      checkboxClass: 'icheckbox_flat-blue',
+      radioClass: 'iradio_flat-blue'
+    });
+
+    //Enable check and uncheck all functionality
+    $(".checkbox-toggle").click(function () {
+      var clicks = $(this).data('clicks');
+      if (clicks) {
+        //Uncheck all checkboxes
+        $(".mailbox-messages input[type='checkbox']").iCheck("uncheck");
+        $(".fa", this).removeClass("fa-check-square-o").addClass('fa-square-o');
+      } else {
+        //Check all checkboxes
+        $(".mailbox-messages input[type='checkbox']").iCheck("check");
+        $(".fa", this).removeClass("fa-square-o").addClass('fa-check-square-o');
+      }
+      $(this).data("clicks", !clicks);
+    });
+
+    //Handle starring for glyphicon and font awesome
+    $(".mailbox-star").click(function (e) {
+      e.preventDefault();
+      //detect type
+      var $this = $(this).find("a > i");
+      var glyph = $this.hasClass("glyphicon");
+      var fa = $this.hasClass("fa");
+
+      //Switch states
+      if (glyph) {
+        $this.toggleClass("glyphicon-star");
+        $this.toggleClass("glyphicon-star-empty");
+      }
+
+      if (fa) {
+        $this.toggleClass("fa-star");
+        $this.toggleClass("fa-star-o");
+      }
+    });
+  });
+</script>
 </body>
 </html>
